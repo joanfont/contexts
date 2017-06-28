@@ -1,0 +1,21 @@
+version: "2"
+services:
+  php: &php
+    image: joanfont/contexts
+    build: .
+    volumes:
+      - .:/code/
+    environment:
+      - "UID=1000"
+
+  composer:
+    image: composer/composer:1.0-alpine
+    environment:
+      - "UID=1000"
+    command: install
+    volumes:
+      - .:/app/
+
+  phpunit:
+    <<: *php
+    entrypoint: ["php", "vendor/bin/phpunit", "tests"]
