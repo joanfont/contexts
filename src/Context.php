@@ -5,5 +5,5 @@ interface Context
 {
   public function enter();
 
-  public function quit();
+  public function quit($exception);
 }
