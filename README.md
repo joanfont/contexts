@@ -1,5 +1,6 @@
 # Contexts
 [![Build Status](https://travis-ci.org/joanfont/contexts.svg?branch=master)](https://travis-ci.org/joanfont/contexts)
+[![codecov](https://codecov.io/gh/joanfont/contexts/branch/master/graph/badge.svg)](https://codecov.io/gh/joanfont/contexts)
 
 a PHP library that emulates Python's `with` statement
 
